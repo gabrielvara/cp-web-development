@@ -1,5 +1,5 @@
 function clickSim() {
-    window.location.href = "página-login.html";
+    window.location.href = "login.html";
 }
 
 function clickNao() {
@@ -11,7 +11,7 @@ function clickLogin() {
     var usuario = document.getElementById("usuario").value 
     var senha = document.getElementById("senha").value 
     if (usuario == "1234" && senha == "1234" ){
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     }
     else {
         erro.innerText = "Usuário ou Senha incorretos, Tente novamente"
