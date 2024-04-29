@@ -242,3 +242,13 @@
     color: black;
     text-decoration: underline;
 }
+
+.botaoquantidade {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #56070c;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 1vb;
+    border-radius: 5px;
+    color: rgb(182, 182, 182);
+}

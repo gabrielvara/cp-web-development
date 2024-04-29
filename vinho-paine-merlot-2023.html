@@ -13,7 +13,7 @@
         <a href="index.html#navbar">Home</a>
         <a href="index.html#loja">Nossos Vinhos</a>
         <a href="index.html#contato">Contato</a>
-        <a href="">Sugestões</a>
+        <a href="index.html#sugestaovinhos">Sugestões</a>
         <img id="imgcarrinho" src="/images/carrinho.png" alt="Carrinho">
     </nav>
     <div class="pre-banner">Agnello a sua certeza de uma boa escolha!</div>
@@ -28,12 +28,15 @@
                 <div class="qtd">
                 <label for="inputqtd">Quantidade:</label>
                 <input type="number" id="inputqtd">
+                <button class="botaoquantidade" id="botaoqtd" onclick="atualizarpreco()">Atualizar Preço</button>
                 </div>
                 <div class="cupomdesconto">
                     <label for="cupom">Cupom de desconto:</label>
                     <input type="text" id="inputcupom">
+                    <button class="botaoquantidade" id="botaoqtd" onclick="aplicarcupom()">Aplicar Cupom</button>
+                    <p class="paragrafo" id="paragrafocupom"></p>
                 </div>
-                <button class="botaocomprar" onclick="comprarvinho1()">COMPRAR</button>
+                <button class="botaocomprar" onclick="comprarvinho()">COMPRAR</button>
                 <button class="botaosugestao" onclick="sugestao()">Ver sugestoes de combinaçao</button>
             </div>
         </div>
@@ -57,5 +60,6 @@
             <p>©Copyright Todos os Direitos Reservados</p>
             </div>
         </footer>
+        <script src="script.js"></script>
 </body>
 </html>

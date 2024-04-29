@@ -13,7 +13,7 @@
         <a href="#navbar">Home</a>
         <a href="#loja">Nossos Vinhos</a>
         <a href="#contato">Contato</a>
-        <a href="">Sugestões</a>
+        <a href="#sugestaovinhos">Sugestões</a>
         <img id="imgcarrinho" src="/images/carrinho.png" alt="Carrinho">
     </nav>
     <div class="pre-banner">Agnello a sua certeza de uma boa escolha!</div>
@@ -24,23 +24,23 @@
             <img class="imgloja" src="/images/vinhos/vinho-1.png" alt="Imagem vinho Faisán Merlot 2022">
             <p class="nomevinho">Faisán Merlot 2022</p>
             <p class="valorvinho">R$59.90</p>
-            <button class="btnvinho" onclick="comprarvinho()">COMPRAR</button>
+            <button class="btnvinho" onclick="comprarvinho1()">COMPRAR</button>
         </div>
         <div class="itemloja">
             <img class="imgloja" src="/images/vinhos/vinho-2.png" alt="Imagem vinho Paine Merlot 2023">
             <p class="nomevinho">Paine Merlot 2023</p>
             <p class="valorvinho">R$74.90</p>
-            <button class="btnvinho" onclick="comprarvinho()">COMPRAR</button>
+            <button class="btnvinho" onclick="comprarvinho2()">COMPRAR</button>
         </div>
         <div class="itemloja">
             <img class="imgloja" src="/images/vinhos/vinho-3.png" alt="Imagem vinho Finca Traversa Cabernet Sauvignon 2022">
             <p class="nomevinho">Finca Traversa Cabernet Sauvignon 2022</p>
             <p class="valorvinho">R$89.90</p>
-            <button class="btnvinho" onclick="comprarvinho()">COMPRAR</button>
+            <button class="btnvinho" onclick="comprarvinho3()">COMPRAR</button>
         </div>
     </div>
     <div class="div-sugestoes">
-        <h2 class="titulo2">Sugestões de Harmonizaçao</h2>
+        <h2 class="titulo2" id="sugestaovinhos">Sugestões de Harmonizaçao</h2>
         <div class="div-selecao">
         <select name="selecaovinhos" id="selecaovinhos">
             <option value="none">Selecione</option>
@@ -48,25 +48,25 @@
             <option value="vinho-paine">Paine Merlot 2023</option>
             <option value="vinho-finca-traversa">Finca Traversa Cabernet Sauvignon 2022</option>
         </select>
-        <button class="botaovisualizar">Visualizar</button>
+        <button class="botaovisualizar" onclick="visualizarsugestao()">Visualizar</button>
         </div>
         <div class="resultadoselecao">
-            <p>As sugestoes para o vinho selecionado sao:</p>
-            <span class="resultadosugestao"></span>
+            <p>As sugestoes para o vinho selecionado sao:</p><br>
+            <span class="resultadosugestao" id="resultsugest"></span>
         </div>
     </div>
     <h2 class="titulo2" id="contato">Entre em contato:</h2>
     <div class="contato">
         <form action="" method="post">
             <label>Nome</label>
-            <input type="text" placeholder="Digite seu nome" autocomplete="off">
+            <input type="text" id="nomeForm" placeholder="Digite seu nome" autocomplete="off">
             <label>Email</label>
-            <input type="text" placeholder="Digite seu nome" autocomplete="off">
+            <input type="text" id="emailForm" placeholder="Digite seu nome" autocomplete="off">
             <br>
             <label>Mensagem</label>
-            <textarea name="message" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+            <textarea name="message" id="mensForm" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
         </form>
-        <button>Enviar</button>
+        <button onclick="enviarformulario()">Enviar</button>
         <p class="paragrafocontato">Obrigado pelo seu contato, responderemos o mais rápido possível!</p>
     </div>
     <h2 class="titulo2">Sobre a Vinheiria Agnello:</h2>

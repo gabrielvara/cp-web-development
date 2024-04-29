@@ -230,7 +230,7 @@
 .paragrafo{
     padding: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 2vb;
 }
 
 .imgowner{
@@ -349,3 +349,4 @@ form textarea{
     color: black;
     text-decoration: underline;
 }
+
